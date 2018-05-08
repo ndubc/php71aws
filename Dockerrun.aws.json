@@ -1,0 +1,19 @@
+{
+  "AWSEBDockerrunVersion": "1",
+  "Image": {
+    "Name": "408560555724.dkr.ecr.us-east-1.amazonaws.com/jos2071/secondrepo",
+    "Update": "true"
+  },
+  "Ports": [
+    {
+      "ContainerPort": "80"
+    }
+  ],
+  "Volumes": [
+    {
+      "HostDirectory": "/var/app/current",
+      "ContainerDirectory": "/var/www/html/"
+    }
+  ],
+  "Logging": "/var/log/apache2"
+}
